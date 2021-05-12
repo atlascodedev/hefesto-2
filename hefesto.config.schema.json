@@ -33,7 +33,7 @@
         "locationId",
         "apiKey",
         "authDomain",
-        "measurementSenderId",
+        "messagingSenderId",
         "measurementId"
       ],
       "description": "Firebase configuration options",
@@ -62,7 +62,7 @@
           "type": "string",
           "description": "[String] Firebase auth domain, this is generated based on your chosen project ID"
         },
-        "measurementSenderId": {
+        "messagingSenderId": {
           "type": "string",
           "description": "[String] Firebase measurement sender id, this is automatically generated at project creation"
         },
