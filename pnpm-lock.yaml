@@ -65,6 +65,7 @@ importers:
       react-colorful: ^5.1.4
       react-dom: ^16.14.0
       react-number-format: ^4.5.5
+      react-redux: ^7.2.4
       redux: ^4.1.0
       redux-devtools-extension: ^2.13.9
       redux-thunk: ^2.3.0
@@ -98,6 +99,7 @@ importers:
       react-colorful: 5.1.4_react-dom@16.14.0+react@16.14.0
       react-dom: 16.14.0_react@16.14.0
       react-number-format: 4.5.5_react-dom@16.14.0+react@16.14.0
+      react-redux: 7.2.4_react-dom@16.14.0+react@16.14.0
       redux: 4.1.0
       redux-devtools-extension: 2.13.9_redux@4.1.0
       redux-thunk: 2.3.0
