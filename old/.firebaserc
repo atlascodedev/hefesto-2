@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "munay-nextjs-hefesto"
+  },
+  "targets": {
+    "munay-nextjs-hefesto": {
+      "hosting": {
+        "app": [
+          "munay-nextjs-hefesto"
+        ],
+        "admin": [
+          "munay-admin-app"
+        ]
+      }
+    }
+  }
+}

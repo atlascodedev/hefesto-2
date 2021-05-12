@@ -1,0 +1,13 @@
+{
+  "name": "@atlascode/core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx allow",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:hefesto": "pnpm dev --filter '@atlascode/hefesto-server' --filter '@atlascode/hefesto-view' "
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "atlas-ares": {
+      "hosting": {
+        "admin": [
+          "hefesto-admin"
+        ]
+      }
+    }
+  }
+}
