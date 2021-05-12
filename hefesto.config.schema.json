@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "title": "Hefesto Configuration",
+  "description": "Hefesto configuration file, entry point for all necessary configuration values",
+  "type": "object",
+  "required": ["firebase"],
+  "properties": {
+    "branding": {
+      "type": "object",
+      "required": ["companyName", "companyWebsite", "companyLogo"],
+      "description": "Branding options; logo, company name, company website and etc...",
+      "properties": {
+        "companyName": {
+          "type": "string",
+          "description": "[String] Name of the company"
+        },
+        "companyWebsite": {
+          "type": "string",
+          "description": "[String] Company's website URL"
+        },
+        "companyLogo": {
+          "type": "string",
+          "description": "[String] Company's logo URL"
+        }
+      }
+    },
+    "firebase": {
+      "type": "object",
+      "required": [
+        "projectId",
+        "appId",
+        "storageBucket",
+        "locationId",
+        "apiKey",
+        "authDomain",
+        "measurementSenderId",
+        "measurementId"
+      ],
+      "description": "Firebase configuration options",
+      "properties": {
+        "projectId": {
+          "type": "string",
+          "description": "[String] Firebase project ID, this is usually the one that you choose when creating a new project"
+        },
+        "appId": {
+          "type": "string",
+          "description": "[String] Firebase app ID, this is automatically generated at project creation"
+        },
+        "storageBucket": {
+          "type": "string",
+          "description": "[String] Firebase storagebucket path, this is automatically generated at project creation"
+        },
+        "locationId": {
+          "type": "string",
+          "description": "[String] Firebase choosen region, this is usually us-central, but it vary depending on your previous choices"
+        },
+        "apiKey": {
+          "type": "string",
+          "description": "[String] Firebase api key, this is automatically generated at project creation"
+        },
+        "authDomain": {
+          "type": "string",
+          "description": "[String] Firebase auth domain, this is generated based on your chosen project ID"
+        },
+        "measurementSenderId": {
+          "type": "string",
+          "description": "[String] Firebase measurement sender id, this is automatically generated at project creation"
+        },
+        "measurementId": {
+          "type": "string",
+          "description": "[String] Firebase measurement id, this is automatically generated at project creation"
+        }
+      }
+    }
+  }
+}
