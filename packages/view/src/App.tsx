@@ -10,8 +10,7 @@ function App() {
     <div>
       <Loading />
       <GlobalAlert />
-      {/* <RouterMain /> */}
-      <Login />
+      <RouterMain />
     </div>
   );
 }

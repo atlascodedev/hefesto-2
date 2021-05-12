@@ -40,6 +40,7 @@ importers:
 
   packages/view:
     specifiers:
+      '@atlascode/hefesto-constants': 1.0.0
       '@date-io/date-fns': ^2.10.8
       '@material-ui/core': ^4.11.4
       '@material-ui/icons': ^4.11.2
@@ -78,6 +79,7 @@ importers:
       vite: ^2.3.0
       yup: ^0.32.9
     dependencies:
+      '@atlascode/hefesto-constants': link:../constants
       '@date-io/date-fns': 2.10.8_date-fns@2.21.3
       '@material-ui/core': 4.11.4_59b2322c74ad89a298801cb761986b59
       '@material-ui/icons': 4.11.2_f8770be636801c64743a0f4853b387e1

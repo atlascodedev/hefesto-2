@@ -4,7 +4,7 @@ import {
   basePath,
   dashboardPath,
   startingPath,
-} from "../../../config/routes.config";
+} from "@atlascode/hefesto-constants";
 import NotFoundRoute from "../../Util/NotFoundRoute";
 import Login from "../Login";
 import Dashboard from "./DashboardRoutes";

@@ -1,6 +1,5 @@
 import { RouteComponentProps, Router, useNavigate } from "@reach/router";
 import React from "react";
-import HadesLayout from "../../../../layout";
 import AdminRoute from "../AdminRoute";
 import {
   collections,
@@ -23,9 +22,8 @@ const DashboardRoutes = ({ location, navigate, path, uri }: Props) => {
     (state) => state.activeCollection
   );
 
-
   return (
-    <div >
+    <div>
       <AdonisGallery />
       <Toolbox />
       <ColorPicker />
