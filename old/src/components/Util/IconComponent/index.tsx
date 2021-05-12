@@ -1,27 +1,7 @@
-import { Grow, SvgIcon, Tooltip } from "@material-ui/core";
+import { SvgIcon, Tooltip } from "@material-ui/core";
 import React from "react";
 import { IconDictonary } from "../../../dictionaries";
-import styled from "styled-components";
-import { setTimeout } from "timers";
 import { IconTypes } from "../../../dictionaries/types";
-
-const IconHelperRoot = styled.div`
-  width: 220px;
-  text-align: center;
-  border-radius: 10px;
-  background-color: #fff;
-  color: #333;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
-    0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  padding: 10px;
-  position: fixed;
-  z-index: 700;
-`;
 
 interface Props {
   iconType: IconTypes;

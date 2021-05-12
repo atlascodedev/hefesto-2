@@ -13,9 +13,9 @@ interface Props {}
 
 const RouterMain = ({}: Props) => {
   return (
-    <Router basepath={`${basePath}`} style={{ width: "100%" }}>
+    <Router basepath={`${"admin"}`} style={{ width: "100%" }}>
       <Login path={"login"} />
-      <Dashboard path={`${dashboardPath}/*`} />
+      <Dashboard path={`${"dashboard"}/*`} />
       <NotFoundRoute default />
     </Router>
   );

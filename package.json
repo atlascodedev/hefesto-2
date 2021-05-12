@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npx allow",
+    "preinstall": "npx only-allow pnpm",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:hefesto": "pnpm dev --filter '@atlascode/hefesto-server' --filter '@atlascode/hefesto-view' "
+    "dev:hefesto": "pnpm dev --filter '@atlascode/hefesto-server' & pnpm dev --filter '@atlascode/hefesto-view' & pnpm dev --filter '@atlascode/hefesto-constants' "
   },
   "author": "",
   "license": "ISC"

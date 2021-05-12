@@ -1,8 +1,7 @@
-import { Grow, SvgIcon, Tooltip } from "@material-ui/core";
+import { SvgIcon, Tooltip } from "@material-ui/core";
 import React from "react";
 import { IconDictonary } from "../../../dictionaries";
 import styled from "styled-components";
-import { setTimeout } from "timers";
 import { IconTypes } from "../../../dictionaries/types";
 
 const IconHelperRoot = styled.div`

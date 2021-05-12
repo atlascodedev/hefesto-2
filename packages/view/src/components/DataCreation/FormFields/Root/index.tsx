@@ -7,6 +7,8 @@ import {
 import { FormFieldDictionary } from "../../../../dictionaries";
 import { FormFieldTypes } from "../../../../dictionaries/types";
 
+export interface FormFieldComponentProps extends RootFormFieldProps {}
+
 interface RootFormFieldProps {
   formFieldType: FormFieldTypes;
   label: string;
@@ -30,8 +32,6 @@ interface RootFormFieldProps {
   checkboxOptions?: CheckboxField[];
   listOptions?: ListFieldOptions | null;
 }
-
-export interface FormFieldComponentProps extends RootFormFieldProps {}
 
 const RootFormField = ({
   formFieldType,
