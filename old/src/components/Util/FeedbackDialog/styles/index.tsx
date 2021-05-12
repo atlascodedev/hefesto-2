@@ -7,6 +7,7 @@ import {
   Warning,
 } from "@material-ui/icons";
 import styled from "styled-components";
+import React from "react";
 
 const FeedbackDialogRoot = styled.div`
   width: 320px;
@@ -37,13 +38,13 @@ const FeedbackDialogSeverityContainer = styled.div<FeedBackSeverityProps>`
   height: 45%;
   width: 100%;
   background-color: ${(props) =>
-    props.severity == "success"
+    props.severity === "success"
       ? "#2cd283"
-      : props.severity == "error"
+      : props.severity === "error"
       ? "#FF4743"
-      : props.severity == "warning"
+      : props.severity === "warning"
       ? "#ff9800"
-      : props.severity == "info"
+      : props.severity === "info"
       ? "#2196f3"
       : "#E5E5E5"};
   border-radius: 8px 8px 0px 0px;
@@ -112,37 +113,37 @@ const FeedbackDialogContentButtonContainer = styled.div<FeedbackDialogContentBut
 
   .cancelBtn {
     border-color: ${(props) =>
-      props.severity == "success"
+      props.severity === "success"
         ? "#2cd283"
-        : props.severity == "error"
+        : props.severity === "error"
         ? "#FF4743"
-        : props.severity == "warning"
+        : props.severity === "warning"
         ? "#ff9800"
-        : props.severity == "info"
+        : props.severity === "info"
         ? "#2196f3"
         : "#E5E5E5"};
 
     color: ${(props) =>
-      props.severity == "success"
+      props.severity === "success"
         ? "#2cd283"
-        : props.severity == "error"
+        : props.severity === "error"
         ? "#FF4743"
-        : props.severity == "warning"
+        : props.severity === "warning"
         ? "#ff9800"
-        : props.severity == "info"
+        : props.severity === "info"
         ? "#2196f3"
         : "#E5E5E5"};
   }
 
   .confirmBtn {
     background-color: ${(props) =>
-      props.severity == "success"
+      props.severity === "success"
         ? "#2cd283"
-        : props.severity == "error"
+        : props.severity === "error"
         ? "#FF4743"
-        : props.severity == "warning"
+        : props.severity === "warning"
         ? "#ff9800"
-        : props.severity == "info"
+        : props.severity === "info"
         ? "#2196f3"
         : "#E5E5E5"};
 
@@ -154,13 +155,13 @@ const FeedbackDialogButtonBase = styled.div<FeedBackSeverityProps>`
   width: 158px;
   height: 40px;
   background: ${(props) =>
-    props.severity == "success"
+    props.severity === "success"
       ? "#2cd283"
-      : props.severity == "error"
+      : props.severity === "error"
       ? "#FF4743"
-      : props.severity == "warning"
+      : props.severity === "warning"
       ? "#ff9800"
-      : props.severity == "info"
+      : props.severity === "info"
       ? "#2196f3"
       : "#E5E5E5"};
   border-radius: 62px;
@@ -213,13 +214,13 @@ const FeedbackDialogLayout = ({
         <FeedbackDialogSeverityContainer severity={severity}>
           <SvgIcon
             component={
-              severity == "success"
+              severity === "success"
                 ? CheckCircleOutline
-                : severity == "error"
+                : severity === "error"
                 ? Error
-                : severity == "info"
+                : severity === "info"
                 ? Info
-                : severity == "warning"
+                : severity === "warning"
                 ? Warning
                 : HelpOutline
             }

@@ -7,6 +7,7 @@ import {
   Warning,
 } from "@material-ui/icons";
 import styled from "styled-components";
+import React from "react";
 
 const FeedbackDialogRoot = styled.div`
   width: 320px;
