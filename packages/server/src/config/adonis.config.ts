@@ -26,17 +26,17 @@ export interface AdonisConfig {
 }
 
 export const adonisImagePath: AdonisPath = {
-  rootFolder: "adonis",
-  gallery: "gallery",
-  galleryThumbnail: "gallery_thumbnail",
-  galleryThumbnailBlur: "gallery_thumbnail_blur",
+  rootFolder: "adonis", // Replace with constants package values
+  gallery: "gallery", // Replace with constants package values
+  galleryThumbnail: "gallery_thumbnail", // Replace with constants package values
+  galleryThumbnailBlur: "gallery_thumbnail_blur", // Replace with constants package values
 };
 
 export const adonisConfig: AdonisConfig = {
-  path: adonisImagePath,
-  createBlur: true,
-  storageBucketPath: firebaseConfig.storageBucket,
-  baseCloudURL: "https://firebasestorage.googleapis.com/v0/b/",
+  path: adonisImagePath, // Replace with constants package values
+  createBlur: true, // Replace with global config
+  storageBucketPath: firebaseConfig.storageBucket, // Remove in favor of global config
+  baseCloudURL: "https://firebasestorage.googleapis.com/v0/b/", // Remove in favor of CONSTANTS
 };
 
 // DONT FORGET TO REPLICATE CHANGES HERE AT THE ADONIS.CONFIG.TS FILE INSIDE THE ./FUNCTIONS/SRC/CONFIG/

@@ -71,6 +71,17 @@
           "description": "[String] Firebase measurement id, this is automatically generated at project creation"
         }
       }
+    },
+    "adonis": {
+      "type": "object",
+      "description": "Configuration options about image optimization and image storage",
+      "properties": {
+        "createBlur": {
+          "type": "boolean",
+          "description": "To whether or not create an additional blurred thumbnail to serve as placeholder while other images are loading",
+          "default": true
+        }
+      }
     }
   }
 }
