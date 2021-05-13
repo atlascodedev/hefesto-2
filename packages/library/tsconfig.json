@@ -5,6 +5,7 @@
     "strict": true,
     "target": "es2015",
     "esModuleInterop": true,
+    "declaration": true,
     "moduleResolution": "node"
   },
   "include": ["src"]

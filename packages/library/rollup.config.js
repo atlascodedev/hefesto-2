@@ -12,10 +12,8 @@ export default [
     plugins: [
       resolve(),
       typescript({
-        declaration: true,
         declarationDir: "dist/cjs",
         module: "commonjs",
-        moduleResolution: "node",
       }),
     ],
   },
@@ -29,10 +27,8 @@ export default [
     plugins: [
       resolve(),
       typescript({
-        declaration: true,
         declarationDir: "dist/esm",
         module: "ESNEXT",
-        moduleResolution: "node",
       }),
     ],
   },
