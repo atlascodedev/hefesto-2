@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "allowJs": true,
+    "emitDeclarationOnly": true,
+    "moduleResolution": "Node",
+    "skipLibCheck": true,
+    "outFile": "dist/index.d.ts"
+  },
+  "include": ["src/*.ts"]
+}
