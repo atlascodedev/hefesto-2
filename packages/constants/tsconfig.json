@@ -2,10 +2,11 @@
   "include": ["src"],
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
+    "module": "ES2015",
     "allowJs": true,
     "checkJs": true,
     "declaration": true,
+    "declarationDir": "dist",
     "declarationMap": true,
     "outDir": "dist",
     "rootDir": "src",

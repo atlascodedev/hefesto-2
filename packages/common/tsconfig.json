@@ -1,8 +1,9 @@
 {
   "include": ["src"],
+  "exclude": ["webpack.config.js", "dist"],
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
+    "module": "ES2015",
     "allowJs": true,
     "checkJs": true,
     "declaration": true,
