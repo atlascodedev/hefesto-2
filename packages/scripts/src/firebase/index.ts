@@ -80,8 +80,17 @@ export const getRemoteEnvinromentVariables = async (): Promise<object> => {
   });
 };
 
-getRemoteEnvinromentVariables()
-  .then((value) => console.log(`I got this value: ${JSON.stringify(value)}`))
-  .catch((error) => {
-    console.log(error);
-  });
+export const unsetRemoteEnvinronmentVariables = () => {
+  try {
+    child_process.execSync("firebase functions:config:unset env").toString();
+
+    console.log(
+      "Cloud functions envinronment variables were unset successfully"
+    );
+  } catch (error) {
+    console.error(
+      "An error occurred when trying to unset your cloud functions envinronment variables"
+    );
+    console.error(error.message);
+  }
+};
