@@ -6,7 +6,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:core": "pnpm dev --filter '@atlascode/hefesto-server'  & pnpm dev --filter '@atlascode/hefesto-constants' & pnpm dev --filter '@atlascode/hefesto-view' ",
+    "dev:core": "pnpm dev --filter '@atlascode/hefesto-server' & pnpm dev --filter '@atlascode/hefesto-constants' & pnpm dev --filter '@atlascode/hefesto-view' ",
     "dev:global": "pnpm dev --filter '@atlascode/*' ",
     "rebuild": "pnpm recursive rebuild",
     "clean:constants": "pnpm clean --filter '@atlascode/hefesto-constants' ",
