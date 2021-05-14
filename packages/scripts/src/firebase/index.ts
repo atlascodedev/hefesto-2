@@ -51,7 +51,7 @@ export const setRemoveEnvinronmentVariables = async (): Promise<void> => {
   }
 };
 
-export const getRemoteEnvinromentVariables = async (): Promise<string> => {
+export const getRemoteEnvinromentVariables = async (): Promise<object> => {
   let dataString: string = "";
 
   const firebaseGetRemoteEnvProcess = child_process.spawn("firebase", [
