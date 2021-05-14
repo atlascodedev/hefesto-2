@@ -7,7 +7,7 @@ export const ADONIS_THUMBNAIL_BLUR_PATH: string = "gallery_thumbnail_blur";
 
 //  Firebase Constants
 
-export const FIREBASE_STORAGE_BASE_URL =
+export const FIREBASE_STORAGE_BASE_URL: string =
   "https://firebasestorage.googleapis.com/v0/b/";
 
 // View layer routing constants

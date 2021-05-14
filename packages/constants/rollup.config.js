@@ -2,6 +2,7 @@ import typescript from "@rollup/plugin-typescript";
 import resolve from "@rollup/plugin-node-resolve";
 import * as path from "path";
 import { terser } from "rollup-plugin-terser";
+import babel from "@rollup/plugin-babel";
 
 export default [
   {
@@ -14,7 +15,12 @@ export default [
       exports: "named",
       sourcemap: true,
     },
-    plugins: [resolve(), typescript({ declaration: false }), terser()],
+    plugins: [
+      resolve(),
+      typescript({ declaration: false }),
+      babel({ babelHelpers: "bundled" }),
+      terser(),
+    ],
   },
 
   {

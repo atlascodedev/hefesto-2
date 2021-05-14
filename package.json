@@ -6,9 +6,12 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:core": "pnpm dev --filter '@atlascode/hefesto-server' & pnpm dev --filter '@atlascode/hefesto-view' & pnpm dev --filter '@atlascode/hefesto-constants' ",
+    "dev:core": "pnpm dev --filter '@atlascode/hefesto-server'  & pnpm dev --filter '@atlascode/hefesto-constants' & pnpm dev --filter '@atlascode/hefesto-view' ",
     "dev:global": "pnpm dev --filter '@atlascode/*' ",
-    "rebuild": "pnpm recursive rebuild"
+    "rebuild": "pnpm recursive rebuild",
+    "clean:constants": "pnpm clean --filter '@atlascode/hefesto-constants' ",
+    "clean:library": "pnpm clean --filter '@atlascode/hefesto-library' ",
+    "clean:global": "pnpm clean --filter '@atlascode/hefesto-constants --filter '@atlascode/hefesto-library' --filter @atlascode/hefesto-scripts "
   },
   "author": "",
   "license": "ISC"
