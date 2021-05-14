@@ -20,9 +20,9 @@ const RouterMain = ({}: Props) => {
   }
 
   return (
-    <Router basepath={`${"admin"}`} style={{ width: "100%" }}>
+    <Router basepath={`${basePath}`} style={{ width: "100%" }}>
       <Login path={"login"} />
-      <Dashboard path={`${"dashboard"}/*`} />
+      <Dashboard path={`${dashboardPath}/*`} />
       <NotFoundRoute default />
     </Router>
   );
