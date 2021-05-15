@@ -1,5 +1,5 @@
 {
-  "name": "@atlascode/hefesto-typings",
+  "name": "@atlascode/hefesto-types",
   "version": "1.0.0",
   "description": "",
   "typings": "./index.d.ts",

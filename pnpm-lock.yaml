@@ -67,10 +67,12 @@ importers:
 
   packages/scripts:
     specifiers:
+      '@atlascode/hefesto-types': workspace:^1.0.0
       '@types/node': ^15.0.3
       bl: ^5.0.0
       typescript: ^4.2.4
     dependencies:
+      '@atlascode/hefesto-types': link:../typings
       bl: 5.0.0
     devDependencies:
       '@types/node': 15.0.3

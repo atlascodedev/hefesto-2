@@ -16,9 +16,29 @@ export interface AdonisImage extends AdonisOrderedTriple {
   uuid: string;
 }
 
+export interface HefestoConfig {
+  firebase?: FirebaseConfig;
+  adonis?: AdonisConfig;
+  branding?: BrandingConfig;
+}
+
+export interface FirebaseConfig {
+  projectId: string;
+  appId: string;
+  storageBucket: string;
+  locationId: string;
+  apiKey: string;
+  authDomain: string;
+  messagingSenderId: string;
+  measurementId: string;
+}
+
 export interface AdonisConfig {
-  path: AdonisPath;
   createBlur: boolean;
-  storageBucketPath: string;
-  baseCloudURL: string;
+}
+
+export interface BrandingConfig {
+  companyName: string;
+  companyWebsite: string;
+  companyLogo: string;
 }

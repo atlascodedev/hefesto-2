@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "baseUrl": "./",
+    "rootDir": "./",
+    "allowJs": true,
+    "experimentalDecorators": true,
+    "lib": ["ES6", "ES2017", "DOM", "ESNext"],
+    "noEmit": true
+  },
+  "exclude": ["**/build", "**/node_modules", "**/dist"]
+}
